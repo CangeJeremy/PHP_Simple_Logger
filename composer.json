@@ -13,6 +13,7 @@
             "name": "Cange Jérémy"
         }
     ],
-    "minimum-stability": "stable",
+    "minimum-stability": "dev",
+    "prefer-stable": true,
     "require": {}
 }
