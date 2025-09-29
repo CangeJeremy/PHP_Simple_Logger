@@ -1,6 +1,9 @@
 # PHP_Simple_Logger
 A simple PHP package for writing logs.
 
+## Installation
+Installation is done with composer : `composer require cangej/php_simple_logger`
+
 ## Usage
 ### 1. Instantiate the SimpleLogger class
 
