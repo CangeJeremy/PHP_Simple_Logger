@@ -21,11 +21,13 @@ class SimpleLogger
     {
         $this->dateDirectory = $dateDir;
 
+        $baseDir = getcwd();
+
         if($this->dateDirectory){
-            $this->logDirectory = __DIR__ . '/' . trim($logDir, '/') . '/' . date('Y-m-d');
+            $this->logDirectory = $baseDir . '/' . trim($logDir, '/') . '/' . date('Y-m-d');
         }
         else{
-            $this->logDirectory = __DIR__ . '/' . trim($logDir, '/');
+            $this->logDirectory = $baseDir . '/' . trim($logDir, '/');
         }
 
         if (!is_dir($this->logDirectory) && !mkdir($this->logDirectory, 0777, true)) {
